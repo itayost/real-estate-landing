@@ -1,0 +1,535 @@
+/* ===========================
+   About Section Styles
+   =========================== */
+
+.about-section {
+  padding: 0;
+  background: #f8f9fa;
+}
+
+/* ===========================
+   Stats Bar
+   =========================== */
+
+/* Option 1: Clean white background with subtle shadow */
+.stats-container {
+  background: white;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Option 2: Light gray background */
+/* .stats-container {
+  background: #f8f9fa;
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #e2e8f0;
+} */
+
+/* Option 3: Subtle gradient with gold accent */
+/* .stats-container {
+  background: linear-gradient(135deg, #fefefe 0%, #f8f9fa 100%);
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.stats-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d69e2e 0%, #f6ad55 100%);
+} */
+
+/* Option 4: Pattern background */
+/* .stats-container {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a365d' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+} */
+
+.stats-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #2d3748;
+  text-align: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  font-size: 2.5rem;
+  color: #d69e2e;
+}
+
+.stat-content {
+  text-align: right;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1a365d;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #718096;
+  margin: 0;
+}
+
+/* ===========================
+   About Container
+   =========================== */
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* ===========================
+   Profile Section
+   =========================== */
+
+.profile-section {
+  text-align: center;
+}
+
+.profile-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.profile-badge {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #d69e2e;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.profile-info {
+  margin-top: 1.5rem;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+  color: #1a365d;
+}
+
+.profile-title {
+  color: #718096;
+  margin: 0 0 1rem;
+}
+
+.profile-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.profile-features span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.profile-features svg {
+  color: #48bb78;
+}
+
+/* ===========================
+   About Content
+   =========================== */
+
+.about-content {
+  padding-top: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   Process Timeline
+   =========================== */
+
+.process-timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.process-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  background: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #1a365d;
+  margin: 0 auto 1rem;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .step-icon {
+  background: #1a365d;
+  color: white;
+  transform: scale(1.1);
+}
+
+.step-connector {
+  position: absolute;
+  top: 30px;
+  right: -50%;
+  width: 100%;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+
+.step-content h4 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  color: #2d3748;
+}
+
+.step-content p {
+  font-size: 0.85rem;
+  color: #718096;
+  margin: 0;
+}
+
+/* ===========================
+   Services Section
+   =========================== */
+
+.services-container {
+  background: white;
+  padding: 4rem 2rem;
+}
+
+.services-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #e2e8f0;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  margin: 0 auto 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.service-title {
+  font-size: 1.3rem;
+  color: #1a365d;
+  margin: 0 0 1rem;
+}
+
+.service-description {
+  color: #718096;
+  margin: 0 0 1.5rem;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.feature-icon {
+  color: #48bb78;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* ===========================
+   Areas Section
+   =========================== */
+
+.areas-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.areas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.area-tag {
+  background: white;
+  border: 2px solid #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.area-tag:hover {
+  border-color: #1a365d;
+  background: #1a365d;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(26, 54, 93, 0.2);
+}
+
+.area-icon {
+  font-size: 1rem;
+  color: #d69e2e;
+  transition: color 0.3s ease;
+}
+
+.area-tag:hover .area-icon {
+  color: white;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .profile-section {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .process-timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .step-connector {
+    display: none;
+  }
+
+  .process-step::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2rem;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 2rem;
+    background: #e2e8f0;
+  }
+
+  .process-step:last-child::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    flex-direction: column;
+  }
+
+  .stat-content {
+    text-align: center;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.75rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+  }
+
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .about-container {
+    padding: 0 1rem 3rem;
+  }
+
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .area-tag {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
